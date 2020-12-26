@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun Dot(view:View){
-        if(ResultView.text.toString() != "0"  && !isDot && ResultView.text.toString() != "") {
+        if(!isDot && ResultView.text.toString() != "") {
             ResultView.text = ResultView.text.toString() + "."
             isDot = true
         }
