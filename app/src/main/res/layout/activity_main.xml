@@ -188,6 +188,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:background="@android:color/transparent"
                 android:onClick="delete"
                 android:id="@+id/ButtonDelete"
                 android:src="@drawable/ic_baseline_backspace_24"
