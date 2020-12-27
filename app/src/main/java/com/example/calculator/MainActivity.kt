@@ -58,32 +58,40 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
     }
     fun divide(vie:View){
-        val value = ResultView.text.toString()
-        operation = "/"
-        firstVariable = value.toDouble()
-        ResultView.text = ""
-        isDot = false
+        if(ResultView.text.isNotEmpty()) {
+            val value = ResultView.text.toString()
+            operation = "/"
+            firstVariable = value.toDouble()
+            ResultView.text = ""
+            isDot = false
+        }
     }
     fun subtract(view: View){
-        val value = ResultView.text.toString()
-        operation = "-"
-        firstVariable = value.toDouble()
-        ResultView.text = ""
-        isDot = false
+        if(ResultView.text.isNotEmpty()) {
+            val value = ResultView.text.toString()
+            operation = "-"
+            firstVariable = value.toDouble()
+            ResultView.text = ""
+            isDot = false
+        }
     }
     fun add(view:View){
-        val value = ResultView.text.toString()
-        operation = "+"
-        firstVariable = value.toDouble()
-        ResultView.text = ""
-        isDot = false
+        if(ResultView.text.isNotEmpty()) {
+            val value = ResultView.text.toString()
+            operation = "+"
+            firstVariable = value.toDouble()
+            ResultView.text = ""
+            isDot = false
+        }
     }
     fun multiply(view:View){
-        val value = ResultView.text.toString()
-        operation = "*"
-        firstVariable = value.toDouble()
-        ResultView.text = ""
-        isDot = false
+        if(ResultView.text.isNotEmpty()) {
+            val value = ResultView.text.toString()
+            operation = "*"
+            firstVariable = value.toDouble()
+            ResultView.text = ""
+            isDot = false
+        }
     }
     fun equal(view:View){
         isDot = false
